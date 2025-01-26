@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #ff7eb3, #ff758c);
+            color: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            background-color: #222;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 2rem;
+            background-color: #fafafa;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ff5470;
+        }
+        .hero .dynamic-text {
+            font-size: 1.5rem;
+            color: #555;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #555;
+        }
+        .gallery, .testimonials, .cta, footer {
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            background-color: #fff;
+        }
+        .gallery-item {
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 12px 12px 0 0;
+        }
+        .gallery-item h3, .gallery-item p {
+            margin: 1rem;
+            font-size: 1.2rem;
+        }
+        .gallery-item .price {
+            color: #ff5470;
+            font-weight: bold;
+        }
+        .gallery-item button {
+            margin: 1rem;
+            padding: 0.7rem 1.5rem;
+            background: linear-gradient(90deg, #ff7eb3, #ff5470);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .gallery-item button:hover {
+            background: linear-gradient(90deg, #ff5470, #ff7eb3);
+        }
+        .testimonials {
+            background-color: #fafafa;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .testimonials h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .testimonial {
+            max-width: 600px;
+            margin: 0 auto;
+            font-style: italic;
+            color: #555;
+        }
+        .cta {
+            background-color: #ffcc00;
+            text-align: center;
+            padding: 2rem;
+            color: #333;
+            margin: 3rem 0;
+        }
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .cta button {
+            padding: 0.8rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cta button:hover {
+            background-color: #222;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>My Art Portfolio</h1>
+        <p>Captivating Artworks for Every Space</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Hello! I am Suraj</h2>
+        <div class="dynamic-text" id="dynamicText"></div>
+    </section>
+
+    <main>
+        <section id="gallery" class="gallery">
+            <div class="gallery-item">
+                <img src="placeholder1.jpg" alt="Abstract Painting 1">
+                <h3>Abstract Bliss</h3>
+                <p><span class="price">$120</span></p>
+                <button>Buy Now</button>
+            </div>
+            <div class="gallery-item">
+                <img src="placeholder2.jpg" alt="Landscape Painting 2">
+                <h3>Tranquil Horizon</h3>
+                <p><span class="price">$200</span></p>
+                <button>Buy Now</button>
+            </div>
+            <div class="gallery-item">
+                <img src="placeholder3.jpg" alt="Modern Art Painting 3">
+                <h3>Modern Symphony</h3>
+                <p><span class="price">$180</span></p>
+                <button>Buy Now</button>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>What People Are Saying</h2>
+            <p class="testimonial">"The artwork is absolutely stunning. It has transformed my living room!" - Emily R.</p>
+        </section>
+
+        <section class="cta">
+            <h2>Looking for a Custom Artwork?</h2>
+            <p>Contact me for bespoke art pieces tailored to your taste and space.</p>
+            <button>Contact Now</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name. Crafted with ❤️ for art enthusiasts. <a href="#contact">Contact Me</a></p>
+    </footer>
+
+    <script>
+        const textArray = [
+            "Creative. Passionate. Visionary.",
+            "Emotions on Canvas.",
+            "Art that Speaks to You.",
+            "Masterpieces Await.",
+            "Transform Your Space."
+        ];
+        const dynamicTextElement = document.getElementById("dynamicText");
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            const currentText = textArray[textIndex];
+            const displayedText = isDeleting
+                ? currentText.substring(0, charIndex--)
+                : currentText.substring(0, charIndex++);
+
+            dynamicTextElement.textContent = displayedText;
+
+            if (!isDeleting && charIndex === currentText.length) {
+                setTimeout(() => (isDeleting = true), 1500);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % textArray.length;
+            }
+
+            const typingSpeed = isDeleting ? 50 : 100;
+            setTimeout(typeEffect, typingSpeed);
+        }
+
+        typeEffect();
+    </script>
+</body>
+</html>
