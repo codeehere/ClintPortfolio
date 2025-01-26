@@ -11,13 +11,6 @@ This guide explains how to redeem your artwork purchase step by step. Follow the
 
 ---
 
-## Step 2: Visit the Redemption Page
-1. Open your web browser and navigate to the official redemption page:
-   - [Redeem Here](https://your-art-portfolio.com/redeem)
-2. On the redemption page, you will find a field to enter your **Redeem Code**.
-
----
-
 ## Step 3: Enter the Redeem Code
 1. Type or paste your **Redeem Code** into the provided field.
 2. Click the **Submit** button.
@@ -41,7 +34,7 @@ This guide explains how to redeem your artwork purchase step by step. Follow the
 
 ## Need Help?
 If you encounter any issues:
-- Contact us via email: [support@your-art-portfolio.com](mailto:support@your-art-portfolio.com)
-- Call our helpline: +1 (800) 123-4567
+- Contact us via email: [support@your-art-portfolio.com](mailto:krishnatrishan085@gmail.com)
+
 
 Thank you for choosing our artwork to enhance your space! 🎨
